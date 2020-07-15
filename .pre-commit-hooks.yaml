@@ -1,0 +1,7 @@
+- id: poetry-update
+  name: Update Poetry dependencies
+  description: Update the Poetry dependencies if out of sync
+  entry: ./poetry-update.sh
+  language: script
+  stages: [post-checkout]
+  always_run: true
