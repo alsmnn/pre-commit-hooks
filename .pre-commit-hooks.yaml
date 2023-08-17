@@ -2,5 +2,6 @@
   name: Update Poetry dependencies
   description: Update the Poetry dependencies if out of sync
   entry: poetry install --sync
+  language: python
   stages: [post-checkout]
   always_run: true
