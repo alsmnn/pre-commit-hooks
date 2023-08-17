@@ -3,5 +3,5 @@
   description: Update the Poetry dependencies if out of sync
   entry: poetry install --sync
   language: python
-  stages: [post-checkout]
+  stages: [post-checkout, post-merge]
   always_run: true
