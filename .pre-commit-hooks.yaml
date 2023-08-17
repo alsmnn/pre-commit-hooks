@@ -1,7 +1,8 @@
 - id: poetry-update
   name: Update Poetry dependencies
   description: Update the Poetry dependencies if out of sync
-  entry: poetry install --sync
+  entry: poetry install
   language: python
   stages: [post-checkout, post-merge]
   always_run: true
+  args: ["--sync"]
